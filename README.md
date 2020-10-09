@@ -1,0 +1,1 @@
+This project directory is used for tracking down the HCN gene sequences in the white clover reference with the hopes of identifying unique upstream sequence at both loci from which PCR primers can be designed. The _T-repens_HCN_genes.fasta_ file contains all known HCN gene sequences and was manually curated by JSS. 
