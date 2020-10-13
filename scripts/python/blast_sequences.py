@@ -41,7 +41,7 @@ def blast_sequences(fasta_in, db, outfile):
     print('Blasting {0} against DB {1}'.format(full_fasta_in_path, db))
     print('BLAST results being written to: {0}'.format(outfile))
     
-    Blast_Command = "blastn -query {0} -db {1} -out {2} -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend qlen sstart send slen evalue bitscore qcovs qcovhsp' -num_threads 2 -evalue 1e-10 -max_hsps 1 -max_target_seqs 1".format(fasta_in, db, outfile)
+    Blast_Command = "blastn -query {0} -db {1} -out {2} -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend qlen sstart send slen evalue bitscore qcovs qcovhsp' -num_threads 2 -evalue 1e-10 -max_hsps 5 -max_target_seqs 5".format(fasta_in, db, outfile)
     
     exit_code = subprocess.call(Blast_Command, shell=True)
     exit_status(exit_code)
